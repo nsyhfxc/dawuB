@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.9.4)  19 APR 2026 17:03
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.11.7)  19 APR 2026 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1003,7 +1003,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 ) (d:/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (./main.aux)
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
@@ -1026,7 +1027,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
 LaTeX Font Info:    ... okay on input line 139.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
 LaTeX Font Info:    ... okay on input line 139.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1265,11 +1265,13 @@ Package unicode-math Warning: I'm going to overwrite the following commands
 
 \c@lstlisting=\count398
 Package hyperref Info: Link coloring ON on input line 139.
-(./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
- (./chapter/index.tex
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+(./chapter/index.tex
 
 Package fontspec Info: Could not resolve font "SimHei/I" (it probably doesn't
 (fontspec)             exist).
@@ -1346,26 +1348,27 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 (fontspec)             <->"FangSong/OT:script=hani;language=dflt;embolden=4;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
- (./main.toc
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.40088pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 2.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 2.
-)
+
+No file main.toc.
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1
+[1
 
-]) (./chapter/dawu.tex [1]
+]) (./chapter/dawu.tex
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.00128pt on input line 7.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.40088pt on input line 7.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 7.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 7.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.3991pt on input line 7.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 7.
+ [1]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
 (Font)              scaled to size 12.00128pt on input line 94.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/b/n' will be
@@ -1389,16 +1392,26 @@ File: figure/3-10.png Graphic file (type bmp)
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6B98072C69A1008694850D04FE61D903;407.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  6B98072C69A1008694850D04FE61D903;407.
  ) 
 Here is how much of TeX's memory you used:
- 40018 strings out of 476720
- 861454 string characters out of 5801445
- 1937842 words of memory out of 5000000
- 61335 multiletter control sequences out of 15000+600000
+ 40003 strings out of 474773
+ 861264 string characters out of 5761289
+ 1938842 words of memory out of 5000000
+ 61451 multiletter control sequences out of 15000+600000
  568832 words of font info for 128 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 1348 hyphenation exceptions out of 8191
  93i,12n,114p,426b,702s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (7 pages).
