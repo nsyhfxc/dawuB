@@ -23,6 +23,19 @@
 	\item $\sqrt[2]{(\frac{dv}{dt}) ^ 2 + (\frac{v^2}{R}) ^ 2}$
 \end{choices}
 
+\item[\textbf{1-7}] 质点做直线运动,\textbf{r}表示位置矢量,\textbf{v}表示速度,\textbf{a}表示加速度,\textbf{s}表示 路程,$a_t$表示切向加速度,下列表达式中,(\quad)
+
+(1). $\dfrac{dv}{dt} = a$,
+(2). $\dfrac{{dr}}{dt} = {v}$,
+(3). $\dfrac{ds}{dt} = v$,
+(4). $\left| \dfrac{d\mathbf{v}}{dt} \right| = a$.
+
+\begin{choices}
+	\item 只有\(1\)、\(4\)是对的.
+	\item 只有\(2\)、\(4\)是对的.
+	\item 只有\(2\)是对的.
+	\item 只有\(3\)是对的.
+\end{choices}
 
 \item[\textbf{1-12}] 质点沿半径为$R$的圆周运动,运动学方程为$\theta  = 3 + 2t^2$,则$t$时刻质点的法向加速度的大小为$a_n = \underline{\hspace{6em}}.$
 
@@ -55,6 +68,185 @@ $\theta=2+3t^3\ \text{(SI单位)}.$
 \end{enumerate}
 
 \end{enumerate}
+
+%\subsubsection{习题1题解}
+\subsection*{习题1题解}
+
+\textbf{1-4题解：}
+
+\textbf{答案：} B
+
+\textbf{解答过程：}
+质点沿半径为 $R$ 的圆周做匀速率运动，每间隔时间 $T$ 转一圈。
+在 $2T$ 时间间隔内，质点刚好转过两整圈，回到了初始起点位置。
+由于位移 $\Delta \mathbf{r}$ 是从起点指向终点的矢量，回到起点意味着总位移的大小为 $0$。因此，其平均速度大小为：
+$$\bar{v} = \frac{|\Delta \mathbf{r}|}{\Delta t} = \frac{0}{2T} = 0$$
+质点在这段时间内通过的路程 $s$ 为两圈的圆周长，即 $s = 2 \times (2\pi R) = 4\pi R$。因此，平均速率为：
+$$\bar{v}_{speed} = \frac{s}{\Delta t} = \frac{4\pi R}{2T} = \frac{2\pi R}{T}$$
+
+\textbf{易混淆知识点说明：}
+本题极易混淆\textbf{平均速度（矢量）}与\textbf{平均速率（标量）}的概念。平均速度的大小等于位移大小除以时间，而平均速率等于路程除以时间。在包含往返或曲线运动的过程中，位移大小通常小于路程，两者绝不可等同看待。
+
+\vspace{2em}
+
+\textbf{1-5题解：}
+
+\textbf{答案：} D
+
+\textbf{解答过程：}
+质点做变速圆周运动时，其总加速度 $\mathbf{a}$ 包含两个相互垂直的分量：\\
+1. 切向加速度 $\mathbf{a}_t$，其作用是改变速度的大小，大小计算为 $a_t = \frac{dv}{dt}$。\\
+2. 法向加速度（即向心加速度）$\mathbf{a}_n$，其作用是改变速度的方向，大小计算为 $a_n = \frac{v^2}{R}$。
+由于切向加速度与法向加速度相互垂直，根据矢量的合成法则（勾股定理），总加速度的大小为两者平方和的算术平方根：
+$$a = \sqrt{a_t^2 + a_n^2} = \sqrt{\left(\frac{dv}{dt}\right)^2 + \left(\frac{v^2}{R}\right)^2}$$
+
+\textbf{易混淆知识点说明：}
+加速度是矢量，在求总加速度大小时不能直接将各个方向加速度的大小进行代数相加（即不能选C）。必须按照矢量运算规则求合成矢量的大小。
+
+\vspace{2em}
+
+\textbf{1-7题解：}
+
+\textbf{答案：} D
+
+\textbf{解答过程：}
+逐一分析各项表达式：
+(1) $\frac{dv}{dt} = a$：式中 $v$ 为速率（标量），$\frac{dv}{dt}$ 表示速率随时间的变化率，即切向加速度 $a_t$（可正可负）。而 $a$ 是总加速度的大小（恒定 $\ge 0$）。在一般曲线运动中，总加速度还包含法向分量，因此 $a \neq \frac{dv}{dt}$，该式错误。
+
+(2) $\frac{dr}{dt} = v$：式中 $r$ 为位置矢量的大小（质点到坐标原点的直线距离）。$\frac{dr}{dt}$ 表示这一距离的变化率，而 $v = \frac{ds}{dt}$ 是质点沿轨迹运动的路程变化率。除非质点严格沿着背离原点的射线做直线运动，否则两者不相等，该式错误。
+
+(3) $\frac{ds}{dt} = v$：式中 $s$ 是路程，$v$ 是速率。物理学中速率的确切定义就是路程对时间的一阶导数，该式完全正确。
+
+(4) $\left| \frac{dv}{dt} \right| = a$：式中 $v$ 为标量，$\left| \frac{dv}{dt} \right|$ 为切向加速度的绝对值。因为曲线运动中必然存在法向加速度 $a_n \neq 0$，所以总加速度 $a = \sqrt{a_t^2 + a_n^2} > |a_t| = \left| \frac{dv}{dt} \right|$，该式错误。（注：只有当表达式为矢量的导数 $\left| \frac{d\mathbf{v}}{dt} \right| = a$ 时才成立）。
+
+综上，只有 (3) 是正确的。
+
+\textbf{易混淆知识点说明：}
+1. 混淆 $\frac{dr}{dt}$（到原点距离的变化率）与 $v$（沿运动轨迹的速率）。
+2. 混淆 $\frac{dv}{dt}$（速度大小的变化率，即切向加速度）与 $\frac{d\mathbf{v}}{dt}$（速度矢量的变化率，即总加速度）。要注意符号是否加粗（标量与矢量之分）。
+
+\vspace{2em}
+
+\textbf{1-12题解：}
+
+\textbf{答案：} $16t^2 R$ （或 $16Rt^2$）
+
+\textbf{解答过程：}
+已知质点的运动学方程（角位移随时间变化的方程）为 $\theta = 3 + 2t^2$。
+首先，对角位移方程求时间 $t$ 的一阶导数，得到质点做圆周运动的角速度 $\omega$：
+$$\omega = \frac{d\theta}{dt} = \frac{d}{dt}(3 + 2t^2) = 4t$$
+题目要求的是 $t$ 时刻质点的\textbf{法向加速度（向心加速度）}大小 $a_n$。根据圆周运动的法向加速度公式 $a_n = \omega^2 R$，将 $\omega$ 代入得：
+$$a_n = (4t)^2 R = 16t^2 R$$
+
+\textbf{易混淆知识点说明：}
+在变速圆周运动中，容易将法向加速度 $a_n = \omega^2 R$ 与切向加速度 $a_t = \frac{d\omega}{dt} R = \alpha R$ 的公式弄混。审题时必须看清所求的是“法向加速度”，然后正确选用与角速度相关的平方关系公式。
+
+\vspace{2em}
+
+\textbf{1-18题解：}
+
+\textbf{解答过程：}
+已知位置矢量 $\mathbf{r} = 4t^2\mathbf{i} + (3 + 2t)\mathbf{j}$。
+
+(1) 求质点的轨迹方程：
+由位置矢量可得运动的参数方程：
+$$x = 4t^2$$
+$$y = 3 + 2t$$
+由第二式解得 $t = \frac{y-3}{2}$，代入第一式消去时间 $t$，得到轨迹方程：
+$$x = 4\left(\frac{y-3}{2}\right)^2 = (y-3)^2$$
+由于 $t \ge 0$，故限制条件为 $y \ge 3, x \ge 0$。
+
+(2) 求从 $t = 0$ 到 $t = 1\text{ s}$ 的位移：
+$t = 0$ 时的位置矢量：$\mathbf{r}_0 = 0\mathbf{i} + 3\mathbf{j} = 3\mathbf{j}$
+$t = 1\text{ s}$ 时的位置矢量：$\mathbf{r}_1 = 4(1)^2\mathbf{i} + (3 + 2\times1)\mathbf{j} = 4\mathbf{i} + 5\mathbf{j}$
+位移 $\Delta\mathbf{r} = \mathbf{r}_1 - \mathbf{r}_0 = 4\mathbf{i} + (5 - 3)\mathbf{j} = 4\mathbf{i} + 2\mathbf{j}$
+
+(3) 求 $t = 0$ 和 $t = 1\text{ s}$ 两时刻的速度：
+速度是位置矢量对时间的一阶导数：
+$$\mathbf{v} = \frac{d\mathbf{r}}{dt} = 8t\mathbf{i} + 2\mathbf{j}$$
+当 $t = 0$ 时，$\mathbf{v}(0) = 2\mathbf{j} \text{ (m/s)}$
+当 $t = 1\text{ s}$ 时，$\mathbf{v}(1) = 8\mathbf{i} + 2\mathbf{j} \text{ (m/s)}$
+
+\textbf{易混淆知识点说明：}
+求轨迹方程的核心思想是“消参”（通常是消去时间 $t$）。容易忽略的是\textbf{参数的取值范围}（如本题 $t \ge 0$ 决定了 $y \ge 3$），没有取值范围的轨迹曲线在物理上是不严谨的；另外，位移是矢量（$\Delta \mathbf{r}$），必须用末位置矢量减去初位置矢量，保留矢量基（$\mathbf{i}, \mathbf{j}$），不能只算出一个大小。
+
+\vspace{2em}
+
+\textbf{1-20题解：}
+
+\textbf{解答过程：}
+已知位置矢量 $\mathbf{r} = t^2\mathbf{i} + 2t\mathbf{j}$。
+
+(1) 求任一时刻的速度和加速度：
+速度 $\mathbf{v} = \frac{d\mathbf{r}}{dt} = 2t\mathbf{i} + 2\mathbf{j}$
+加速度 $\mathbf{a} = \frac{d\mathbf{v}}{dt} = 2\mathbf{i}$
+
+(2) 求任一时刻的切向加速度和法向加速度：
+先求速率 $v$（速度的大小）：
+$$v = |\mathbf{v}| = \sqrt{(2t)^2 + 2^2} = \sqrt{4t^2 + 4} = 2\sqrt{t^2+1}$$
+切向加速度 $a_t$ 是速率对时间的导数：
+$$a_t = \frac{dv}{dt} = \frac{d}{dt}\left(2(t^2+1)^{\frac{1}{2}}\right) = 2 \cdot \frac{1}{2}(t^2+1)^{-\frac{1}{2}} \cdot 2t = \frac{2t}{\sqrt{t^2+1}}$$
+总加速度的大小 $a = |\mathbf{a}| = 2$。
+由加速度的分解公式 $a^2 = a_t^2 + a_n^2$，可得法向加速度 $a_n$：
+$$a_n = \sqrt{a^2 - a_t^2} = \sqrt{2^2 - \left(\frac{2t}{\sqrt{t^2+1}}\right)^2} = \sqrt{4 - \frac{4t^2}{t^2+1}} = \sqrt{\frac{4t^2+4-4t^2}{t^2+1}} = \frac{2}{\sqrt{t^2+1}}$$
+
+\textbf{易混淆知识点说明：}
+切向加速度 $a_t = \frac{dv}{dt}$ 中的 $v$ 是\textbf{速率（标量）}，而不是速度矢量。很多学生会误将速度矢量求导得到的总加速度大小当成切向加速度。正确的做法是：先求速度矢量的大小（即速率算式），再对该代数式求时间 $t$ 的导数得到 $a_t$，最后利用 $a_n = \sqrt{a^2 - a_t^2}$ 求 $a_n$ 往往比套用曲率半径公式更简单。
+
+\vspace{2em}
+
+\textbf{1-25题解：}
+
+\textbf{解答过程：}
+已知加速度 $a = 2 + 6x^2$，初始条件 $x=0$ 时，$v_0 = 10 \text{ m/s}$。
+根据加速度的定义，并利用链式求导法则（将对时间的导数转化为对位移的导数）：
+$$a = \frac{dv}{dt} = \frac{dv}{dx} \cdot \frac{dx}{dt} = v \frac{dv}{dx}$$
+将已知加速度表达式代入，得到：
+$$v \frac{dv}{dx} = 2 + 6x^2$$
+分离变量可得：
+$$v dv = (2 + 6x^2) dx$$
+对等式两边进行定积分，利用初始条件：
+$$\int_{10}^{v} v' dv' = \int_{0}^{x} (2 + 6x'^2) dx'$$
+$$\left[ \frac{1}{2}v'^2 \right]_{10}^{v} = \left[ 2x' + 2x'^3 \right]_{0}^{x}$$
+$$\frac{1}{2}v^2 - \frac{1}{2}(10^2) = 2x + 2x^3$$
+$$v^2 - 100 = 4x + 4x^3$$
+$$v^2 = 4x^3 + 4x + 100$$
+由于质点沿 $x$ 轴运动，在 $x=0$ 处速度为正，且 $a > 0$（速度不断增加），故速度始终为正。解得：
+$$v = \sqrt{4x^3 + 4x + 100} \text{ (m/s)}$$
+
+\textbf{易混淆知识点说明：}
+当加速度 $a$ 是位置 $x$ 的函数（而非时间 $t$ 的函数）时，\textcolor{red}{绝不能}直接使用 $v = \int a dt$ 进行积分。必须熟练掌握微积分中的恒等变换 $\mathbf{a = v \frac{dv}{dx}}$，将时间元变换为空间元，这是解决动力学和运动学中“位移依赖型”问题的金钥匙。
+
+\vspace{2em}
+
+\textbf{1-26题解：}
+
+\textbf{解答过程：}
+已知 $R = 1\text{ m}$，运动学方程 $\theta = 2 + 3t^3$。
+先求角速度 $\omega$ 和角加速度 $\alpha$：
+$$\omega = \frac{d\theta}{dt} = 9t^2$$
+$$\alpha = \frac{d\omega}{dt} = 18t$$
+
+(1) 求 $t = 2\text{ s}$ 时，质点的切向加速度和法向加速度：
+当 $t = 2\text{ s}$ 时，$\omega = 9 \times 2^2 = 36 \text{ rad/s}$，$\alpha = 18 \times 2 = 36 \text{ rad/s}^2$。
+切向加速度：$a_t = \alpha R = 36 \times 1 = 36 \text{ m/s}^2$
+法向加速度：$a_n = \omega^2 R = 36^2 \times 1 = 1296 \text{ m/s}^2$
+
+(2) 求加速度方向和半径成 $45^\circ$ 角时，质点偏转的角度：
+总加速度 $\mathbf{a}$ 是切向加速度 $\mathbf{a}_t$ 与法向加速度 $\mathbf{a}_n$ 的矢量和。法向加速度始终沿半径方向指向圆心。
+当总加速度与半径成 $45^\circ$ 角时，说明切向加速度和法向加速度的大小相等：
+$$a_t = a_n \implies \alpha R = \omega^2 R \implies \alpha = \omega^2$$
+代入 $\omega$ 和 $\alpha$ 的表达式：
+$$18t = (9t^2)^2 \implies 18t = 81t^4$$
+由于 $t > 0$（从 $t=0$ 开始运动后），消去一个 $t$ 得：
+$$t^3 = \frac{18}{81} = \frac{2}{9}$$
+此时质点从 $t=0$ 到该时刻的偏转角（即角位移的增量）为：
+$$\Delta\theta = \theta(t) - \theta(0) = (2 + 3t^3) - 2 = 3t^3$$
+将 $t^3 = \frac{2}{9}$ 代入上式：
+$$\Delta\theta = 3 \times \frac{2}{9} = \frac{2}{3} \text{ rad}$$
+
+\textbf{易混淆知识点说明：}
+“加速度的方向和半径成 $45^\circ$ 角”这句话是对几何关系的一种物理表述。半径方向即是\textbf{法向加速度}的方向，切向垂直于法向。构成直角三角形后，夹角为 $45^\circ$ 即意味着直角边相等，即 $a_t = a_n$。此外，求“偏转了多少”问的是\textbf{角位移的变化量} $\Delta\theta = \theta_t - \theta_0$，不能直接把时刻 $t$ 代入原方程当成最终答案（会多出初始角位移常数）。
 
 \subsection{习题2}
 
