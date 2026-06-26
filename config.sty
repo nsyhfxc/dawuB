@@ -12,6 +12,7 @@
 \usepackage{CJK}         %显示中文宏包
 \usepackage{booktabs}    %用于更美观的表格线
 \usepackage{tabularx}    %自动调整列宽
+\usepackage{exam-zh-choices}
 \renewcommand{\baselinestretch}{1.38}
 \lstset{
     basicstyle=\ttfamily\footnotesize, % 缩小字号
@@ -67,13 +68,3 @@
 \everymath{\displaystyle}
 \usepackage{multicol}
 \usepackage{enumitem}
-
-% 定义choices环境
-\newlist{choices}{enumerate}{1}
-%\setlist[choices,1]{
-	%	label=\Alph*.,
-	%	leftmargin=2em,
-	%	itemsep=0.3em,
-	%	topsep=0.3em
-	%}
-\setlist[choices,1]{label=\Alph*., leftmargin=1.5em, itemsep=0em, before=\begin{multicols}{2}, after=\end{multicols}}
